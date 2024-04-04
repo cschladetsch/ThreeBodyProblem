@@ -1,0 +1,10 @@
+^C:\USERS\CHRIS\LOCAL\REPOS\THREEBODYPROBLEM\BUILD\CMAKEFILES\E15DD75748FB3BC818D452891A142FD7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/chris/local/repos/ThreeBodyProblem -BC:/Users/chris/local/repos/ThreeBodyProblem/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/chris/local/repos/ThreeBodyProblem/build/ThreeBodySimulation.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
