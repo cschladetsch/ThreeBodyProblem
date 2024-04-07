@@ -4,8 +4,6 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#include <SDL2/SDL.h>
-#include <boost/numeric/odeint.hpp>
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
