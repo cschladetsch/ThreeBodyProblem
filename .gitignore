@@ -1,4 +1,5 @@
 # Generic .gitignore file
+/build
 
 /.current
 
