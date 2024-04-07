@@ -61,8 +61,8 @@ void updateState(State& state, double dt) {
         body.x += body.vx * dt;
         body.y += body.vy * dt;
 
-        body.x = clip(body.x, 0.0, static_cast<double>(SCREEN_WIDTH));
-        body.y = clip(body.y, 0.0, static_cast<double>(SCREEN_HEIGHT));
+        body.x = clip(0.0, static_cast<double>(SCREEN_WIDTH), body.x );
+        body.y = clip(0.0, static_cast<double>(SCREEN_HEIGHT), body.y);
 
         ++i;
     }
